@@ -1,0 +1,32 @@
+Recv: echo:  G21    ; Units in mm (mm)
+Recv: 
+Recv: echo:; Filament settings: Disabled
+Recv: echo:  M200 S0 D1.75
+Recv: echo:; Steps per unit:
+Recv: echo: M92 X80.00 Y80.00 Z400.00 E96.92
+Recv: echo:; Maximum feedrates (units/s):
+Recv: echo:  M203 X500.00 Y500.00 Z5.00 E25.00
+Recv: echo:; Maximum Acceleration (units/s2):
+Recv: echo:  M201 X500.00 Y500.00 Z100.00 E1000.00
+Recv: echo:; Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+Recv: echo:  M204 P500.00 R500.00 T1000.00
+Recv: echo:; Advanced: B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> X<max_x_jerk> Y<max_y_jerk> Z<max_z_jerk> E<max_e_jerk>
+Recv: echo:  M205 B20000.00 S0.00 T0.00 X10.00 Y10.00 Z0.30 E5.00
+Recv: echo:; Home offset:
+Recv: echo:  M206 X0.00 Y0.00 Z0.00
+Recv: echo:; Material heatup parameters:
+Recv: echo:  M145 S0 H150.00 B45.00 F255
+Recv: echo:  M145 S1 H190.00 B55.00 F255
+Recv: echo:  M145 S2 H240.00 B70.00 F255
+Recv: echo:  M145 S3 H240.00 B70.00 F255
+Recv: echo:; PID settings:
+Recv: echo:  M301 P32.29 I3.92 D66.51
+Recv: echo:  M304 P40.79 I7.84 D141.42
+Recv: echo:; LCD Brightness:
+Recv: echo:  M251 B255
+Recv: echo:; Power-Loss Recovery:
+Recv: echo:  M413 S0
+Recv: echo:; Filament load/unload lengths:
+Recv: echo:  M603 L0.00 U0.00
+Recv: echo:; Filament runout sensor:
+Recv: echo:  M412 S0 D0.00
